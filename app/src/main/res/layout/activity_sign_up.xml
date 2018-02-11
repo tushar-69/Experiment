@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="in.triumphinfotech.experiment.SignUpActivity">
+
+    <LinearLayout
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:background="#304c50"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:id="@+id/lytFName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:padding="5dp">
+
+            <Button
+                android:id="@+id/btnLftArrowSignUp"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:gravity="left"
+                android:clickable="true"
+                android:background="@drawable/arrow_left_black">
+            </Button>
+
+            <EditText
+                android:id="@+id/txtFName"
+                android:layout_width="250dp"
+                android:layout_height="30dp"
+                android:layout_centerInParent="true"
+                android:gravity="left"
+                android:background="#ffffff"
+                android:hint="FIRST NAME"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/lytLName"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:layout_below="@id/lytFName"
+            android:padding="5dp">
+
+            <EditText
+                android:id="@+id/txtLName"
+                android:layout_width="250dp"
+                android:layout_height="30dp"
+                android:layout_centerInParent="true"
+                android:gravity="left"
+                android:background="#ffffff"
+                android:hint="LAST NAME"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/lytDOB"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:layout_below="@id/lytLName"
+            android:padding="5dp">
+
+            <EditText
+                android:id="@+id/txtDOB"
+                android:layout_height="30dp"
+                android:layout_width="250dp"
+                android:layout_centerInParent="true"
+                android:layout_centerVertical="true"
+                android:hint="DATE OF BIRTH"
+                android:background="#ffffff"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/lytGender"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:padding="5dp"
+            android:layout_below="@id/lytDOB">
+
+            <TextView
+                android:id="@+id/txtGender"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:layout_marginLeft="60dp"
+                android:layout_marginTop="10dp"
+                android:textColor="#8eb0f1"
+                android:text="GENDER">
+            </TextView>
+
+            <TextView
+                android:id="@+id/txtRBtnMale"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/circulartext"
+                android:layout_marginLeft="160dp"
+                android:gravity="center"
+                android:textColor="#8eb0f1"
+                android:text="M">
+            </TextView>
+            <TextView
+                android:id="@+id/txtRBtnfemale"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/circulartext"
+                android:layout_marginLeft="210dp"
+                android:gravity="center"
+                android:textColor="#8eb0f1"
+                android:text="F">
+            </TextView>
+
+            <TextView
+                android:id="@+id/txtRBtnTransG"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/circulartext"
+                android:layout_marginLeft="260dp"
+                android:gravity="center"
+                android:textColor="#8eb0f1"
+                android:text="T">
+            </TextView>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/lytEmailId"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:layout_below="@id/lytGender"
+            android:layout_marginTop="20dp"
+            android:padding="5dp">
+
+            <EditText
+                android:id="@+id/txtEmail"
+                android:layout_width="250dp"
+                android:layout_height="30dp"
+                android:layout_centerInParent="true"
+                android:gravity="left"
+                android:background="#ffffff"
+                android:hint="EMAIL (PRIVACY ASSURED)"
+                android:inputType="textEmailAddress"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/lytPassword"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:layout_below="@id/lytEmailId"
+            android:padding="5dp">
+
+            <EditText
+                android:id="@+id/txtPassword"
+                android:layout_width="250dp"
+                android:layout_height="30dp"
+                android:layout_centerInParent="true"
+                android:gravity="left"
+                android:background="#ffffff"
+                android:hint="PASSWORD"
+                android:inputType="textPassword"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:padding="5dp"
+            android:id="@+id/lytBtnSignOnUp"
+            android:layout_marginTop="15dp"
+            android:layout_below="@id/lytPassword">
+
+            <Button
+                android:id="@+id/btnSignOnUp"
+                android:layout_height="wrap_content"
+                android:layout_width="250dp"
+                android:layout_centerInParent="true"
+                android:clickable="true"
+                android:gravity="center"
+                android:background="@drawable/mybutton"
+                android:textColor="#ffffff"
+                android:text="Sign Up">
+            </Button>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/lnkTnC"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_below="@id/lytBtnSignOnUp">
+
+            <TextView
+                android:id="@+id/txtTnC"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="35dp"
+                android:textColor="#8eb0f1"
+                android:textSize="12dp"
+                android:text="By tapping on 'Sign Up' you agree to our Terms of Use">
+            </TextView>
+        </RelativeLayout>
+    </LinearLayout>
+</android.support.constraint.ConstraintLayout>
